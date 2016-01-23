@@ -1,5 +1,4 @@
 # BeamStats
-Helped Made By Dead-i Made By CodeLuca
+Helped Made By [Ethan_](https://beam.pro/Ethan_)
 Made For Beamers
 
-Android app https://surl.im/iR7t
