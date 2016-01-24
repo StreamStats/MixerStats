@@ -36,7 +36,11 @@ function getData(){
          html += '<br><b>Joined on: </b>' + joined.replace('T', ' at ');
          $('.profile').html(html);
       }).fail(function(data){
+<<<<<<< HEAD
             html = '<h1>A Twitch user with that name does not exist.';
+=======
+           var html = '<h1>A user with that name does not exist.';
+>>>>>>> e43ae7550b3b99b26343ad3f528fa09f8d03413f
              $('.profile').html(html);
             return;
       });
