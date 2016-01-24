@@ -4657,18 +4657,14 @@ a.bg-danger:focus, a.bg-danger:hover {
     display: none !important; } }
 
 * {
-  font-family: "Lato"; 
-  color: #fff;
-}
+  font-family: "Lato"; }
 
 a {
   color: green;
-  text-decoration: none; 
-  
-}
+  text-decoration: none; }
 
 body {
-  background: #6441A5; }
+  background: linear-gradient(120deg, #155799, #159957); }
 
 .display-5 {
   color: #fff; }
