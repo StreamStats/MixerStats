@@ -4659,6 +4659,15 @@ a.bg-danger:focus, a.bg-danger:hover {
 * {
   font-family: "Lato"; }
 
+p {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: inline; }
+
+b {
+  color: #fff; }
+
 a {
   color: green;
   text-decoration: none; }
