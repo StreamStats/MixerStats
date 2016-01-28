@@ -10,41 +10,43 @@ $(document).ready(function(event){
 });
 function getData(){
     $.get('https://beam.pro/api/v1/channels/' + $('#inputText').val(), "", function(data){
-         var avatar = "https://beam.pro/api/v1/users/" + data['user']['id'] + "/avatar";
-         var username = data['user']['username'];
-         var followers = data['numFollowers'];
-         var partnered = data['partnered'];
-         var experience = data['user']['experience'];
-         var sparks = data['user']['sparks'];
-         var channelID = data['user']['id'];
-         var totalViews = data['viewersTotal'];
-         var online = data['online'];
+         var Avatar = "https://beam.pro/api/v1/users/" + data['user']['id'] + "/avatar";
+         var Username = data['user']['username'];
+         var Followers = data['numFollowers'];
+         var Tetris = data['interactive'];
+         var Audience = data['audience'];
+         var Experience = data['user']['experience'];
+         var Sparks = data['user']['sparks'];
+         var ChannelID = data['user']['id'];
+         var TotalViews = data['viewersTotal'];
+         var Online = data['online'];
          if(data['type'] != null){
             var lastPlayed = data['type']['name'];
          }else{
             var lastPlayed = "None";
          }
          var joined = data['createdAt'];
-         var html = '<center><img src="' + avatar + '"width="100px" height="100px" style="border:3px solid #fff">';
-         html += '<h1>' + username + '</h1>';
-         html += '<br><b>Followers: </b><p>' + followers + "</p>";
-         html += '<br><b>partnered: </b><p>' + partnered + "</p>";
-         html += '<br><b>Experience: </b><p>' + experience + "</p>";
-         html += '<br><b>Sparks: </b><p>' + sparks + "</p>";
-         html += '<br><b>Channel ID: </b><p>' + channelID + "</p>";
-         html += '<br><b>Total Views: </b><p>' + totalViews + "</p>";
+         var html = '<center><img src="' + Avatar + '"width="100px" height="100px" style="border:3px solid #fff">';
+         html += '<h1>' + Username + '</h1>';
+         html += '<br><b>Followers: </b>' + Followers;
+         html += '<br><b>interactive: </b>' + Tetris;
+         html += '<br><b>Audience: </b>' + Audience;
+         html += '<br><b>Experience: </b>' + Experience;
+         html += '<br><b>Sparks: </b>' + Sparks;
+         html += '<br><b>Channel ID: </b>' + ChannelID;
+         html += '<br><b>Total Views: </b>' + TotalViews;
          html += "<br>";
-         if(online){
-             html += '<br><b><font color="green"><a href="https://beam.pro/' + username + '">Online</a></font></b>';
+         if(Online){
+             html += '<br><b><font color="White"><a href="https://beam.pro/' + username + '">Online</a></font></b>';
          }else{
              html += '<br><b><font color="red">Offline</font></b>';
          }
-         html+= '<br><b>Last Played: </b><p>' + lastPlayed + "</p>";
-         html += '<br><b>Joined on: </b><p>' + joined.replace('T', ' at ') + "</p>";
+         html+= '<br><b>Last Played: </b>' + lastPlayed;
+         html += '<br><b>Joined on: </b>' + joined.replace('T', ' at ');
          $('.profile').html(html);
       }).fail(function(data){
-           var html = '<h1>A user with that name does not exist.';
+            html = '<h1>A Beam user with that name does not exist.';
              $('.profile').html(html);
             return;
-      });
+      });;
 }
