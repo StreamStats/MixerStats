@@ -37,7 +37,7 @@ function getData(){
          html += '<br><b>Total Views: </b>' + TotalViews;
          html += "<br>";
          if(Online){
-             html += '<br><b><font color="White"><a href="https://beam.pro/' + username + '">Online</a></font></b>';
+             html += '<br><b><font color="White"><a href="https://beam.pro/' + Username + '">Online</a></font></b>';
          }else{
              html += '<br><b><font color="red">Offline</font></b>';
          }
