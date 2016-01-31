@@ -13,6 +13,7 @@ function getData(){
          var Avatar = "https://beam.pro/api/v1/users/" + data['user']['id'] + "/avatar";
          var Username = data['user']['username'];
          var Followers = data['numFollowers'];
+         var Partnered = data['Partnered'];
          var Tetris = data['interactive'];
          var Audience = data['audience'];
          var Experience = data['user']['experience'];
@@ -29,6 +30,7 @@ function getData(){
          var html = '<center><img src="' + Avatar + '"width="100px" height="100px" style="border:3px solid #fff">';
          html += '<h1>' + Username + '</h1>';
          html += '<br><b>Followers: </b>' + Followers;
+         html += '<br><b>Partnered: </b>' + Partnered;
          html += '<br><b>interactive: </b>' + Tetris;
          html += '<br><b>Audience: </b>' + Audience;
          html += '<br><b>Experience: </b>' + Experience;
