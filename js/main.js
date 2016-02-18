@@ -23,7 +23,6 @@ function getData(){
          var te = data['transcodingEnabled'];
          var ftl = data['ftl'];
          var hasVod = data['hasVod'];
-         var verified = data['verified'];
          var suspended = data['suspended'];
          var Online = data['online'];
          if(data['type'] != null){
@@ -36,7 +35,6 @@ function getData(){
          html += '<h1>' + Username + '</h1>';
          html += '<br><b>Followers: </b>' + Followers;
          html+= '<br><b>Partnered: </b>' + Partnered;
-         html += '<br><b>Verified: </b>' + verified;
          html += '<br><b>FTL: </b>' + ftl;
          html += '<br><b>HasVod: </b>' + hasVod;
          html += '<br><b>suspended: </b>' + suspended;
