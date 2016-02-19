@@ -17,6 +17,7 @@ function getData(){
          var Tetris = data['interactive'];
          var Audience = data['audience'];
          var Experience = data['user']['experience'];
+         var lvls = data['user']['level'];
          var Sparks = data['user']['sparks'];
          var ChannelID = data['user']['id'];
          var TotalViews = data['viewersTotal'];
@@ -40,6 +41,7 @@ function getData(){
          html += '<br><b>suspended: </b>' + suspended;
          html += '<br><b>interactive: </b>' + Tetris;
          html += '<br><b>Audience: </b>' + Audience;
+         html += '<br><b>Levels: </b>' + lvls
          html += '<br><b>Experience: </b>' + Experience;
          html += '<br><b>Sparks: </b>' + Sparks;
          html += '<br><b>Channel ID: </b>' + ChannelID;
