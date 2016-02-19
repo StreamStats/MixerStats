@@ -60,7 +60,7 @@ function getData(){
          }else{
              html += '<br><b><font color="red">Offline</font></b>';
          }
-         html+= '<br><b><span class="label label-warning"style="color: black;>Last Played:'+lastPlayed+'</b>';
+         html+= '<br><b><span class="label label-warning"style="color: black;">Last Played:'+lastPlayed+'</b>';
          html += '<br><b><span class="label label-warning"style="color: black;">Joined on: '+joined+' </b>'.replace('T', ' at ');
          $('.profile').html(html);
       }).fail(function(data){
