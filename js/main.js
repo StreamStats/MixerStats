@@ -21,8 +21,8 @@ function getData(){
          var Sparks = data['user']['sparks'];
          var ChannelID = data['user']['id'];
          var Tetrisid = data['tetrisGameId'];
-         var Cover = data['coverId'];
-         var thumbnail = data['thumbnailId'];
+         var Coverid = data['coverId'];
+         var Thumbnail = data['thumbnailId'];
          var StreamMute = data['preferences']['channel:player:muteOwn'];
          var FollowNotify = data['preferences']['channel:notify:follow'];
          var TotalViews = data['viewersTotal'];
@@ -46,8 +46,8 @@ function getData(){
          html += '<br><b>---ID---</b>'
          html += '<br><b>Tetris Game ID: </b>' + Tetrisid;
          html += '<br><b>Channel ID: </b>' + ChannelID;
-         html += '<br><b>Cover ID: </b>' + Cover;
-         html += '<br><b>Thumbnail ID: </b>' + thumbnail;
+         html += '<br><b>Cover ID: </b>' + Coverid;
+         html += '<br><b>Thumbnail ID: </b>' + Thumbnail;
          html += '<br><b>---Preference---</b>'
          html += '<br><b>interactive: </b>' + Tetris;
          html += '<br><b>Audience: </b>' + Audience;
