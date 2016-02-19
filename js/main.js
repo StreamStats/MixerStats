@@ -35,12 +35,12 @@ function getData(){
          }
          var joined = data['createdAt'];
          var html = '<center><img src="' + Avatar + '"width="100px" height="100px" style="border:3px solid #fff">';
-         html += '<h1>' + Username + '</h1>';
-         html += '<br><b>Followers: </b>' + Followers;
+         html += '<h1><span class="label label-success">' + Username + '</h1>';
+         html += '<br><b><span class="label label-danger">Followers: ' + Followers+ '</b>';
          html+= '<br><b>Partnered: </b>' + Partnered;
-          html += '<br><b>Total Views: </b>' + TotalViews;
-         html += '<br><b>---Points---</b>'
-         html += '<br><b>Level: </b>' + lvls
+         html += '<br><b><span class="label label-danger">Total Views: ' + TotalViews +'</b>';
+         html += '<br><b><span class="label label-danger">---Points---</b>'
+        html += '<br><b><span class="label label-warning">Level: ' + lvls +'</b>';
          html += '<br><b>Experience: </b>' + Experience;
          html += '<br><b>Sparks: </b>' + Sparks;
          html += '<br><b>---ID---</b>'
@@ -60,11 +60,11 @@ function getData(){
          }else{
              html += '<br><b><font color="red">Offline</font></b>';
          }
-         html+= '<br><b>Last Played: </b>' + lastPlayed;
-         html += '<br><b>Joined on: </b>' + joined.replace('T', ' at ');
+         html+= '<br><b><span class="label label-warning">Last Played:'+lastPlayed+'</b>';
+         html += '<br><b><span class="label label-warning"style="color: yellow;">Joined on: '+joined+' </b>'.replace('T', ' at ');
          $('.profile').html(html);
       }).fail(function(data){
-            html = '<h1>A Beam user with that name does not exist.';
+            html = '<p><span class="label label-warning"style="color: black;">A Beam user with that name does not exist.';
              $('.profile').html(html);
             return;
       });;
