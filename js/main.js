@@ -40,7 +40,7 @@ function getData(){
          html+= '<br><b>Partnered: </b>' + Partnered;
           html += '<br><b>Total Views: </b>' + TotalViews;
          html += '<br><b>---Points---</b>'
-         html += '<br><b>Levels: </b>' + lvls
+         html += '<br><b>Level: </b>' + lvls
          html += '<br><b>Experience: </b>' + Experience;
          html += '<br><b>Sparks: </b>' + Sparks;
          html += '<br><b>---ID---</b>'
