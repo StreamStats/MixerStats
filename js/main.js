@@ -40,9 +40,9 @@ function getData(){
          html += '<br><b><span class="label label-primary">Partnered: ' + Partnered +'</b>';
          html += '<br><b><span class="label label-primary">Total Views: ' + TotalViews +'</b>';
          html += '<br><b><span class="label label-danger">---Points---</b>'
-         html += '<br><b><span class="label label-warning">Level: ' + lvls +'</b>';
-         html += '<br><b><span class="label label-warning">Experience: ' + Experience +'</b>';
-         html += '<br><b><span class="label label-warning">Sparks: ' + Sparks +'</b>';
+         html += '<br><b><span class="label label-warning"style="color: black;>Level: ' + lvls +'</b>';
+         html += '<br><b><span class="label label-warning"style="color: black;>Experience: ' + Experience +'</b>';
+         html += '<br><b><span class="label label-warning"style="color: black;>Sparks: ' + Sparks +'</b>';
          html += '<br><b><span class="label label-primary">---ID---</b>'
          html += '<br><b>Tetris Game ID: </b>' + Tetrisid;
          html += '<br><b>Channel ID: </b>' + ChannelID;
