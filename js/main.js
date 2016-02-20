@@ -42,7 +42,7 @@ function getData(){
          html += '<br><b><span class="label label-danger">---Points---</b>'
          html += '<br><b><span class="label label-warning"style="color: black;">Level: ' + lvls +'</b>';
          html += '<br><b><span class="label label-warning"style="color: black;">Experience: ' + Experience +'</b>';
-         html += '<br><b><i class="fa fa-bolt"><span class="label label-warning"class="fa fa-bolt"style="color: black;">Sparks: ' + Sparks +'</b></i>';
+         html += '<br><b><span class="label label-warning"span class="fa fa-bolt"style="color: black;">Sparks: ' + Sparks +'</b></i>';
          html += '<br><b><span class="label label-primary">---ID---</b>'
          html += '<br><b>Tetris Game ID: </b>' + Tetrisid;
          html += '<br><b>Channel ID: </b>' + ChannelID;
