@@ -49,13 +49,13 @@ function getData(){
          html += '<br><b>Channel ID: </b>' + ChannelID;
          html += '<br><b>Cover ID: </b>' + Coverid;
          html += '<br><b>Thumbnail ID: </b>' + Thumbnail;
-         html += '<br><b><span class="label label-primary">---Preference---</b>'
-         html += '<br><b>interactive: </b>' + Tetris;
-         html += '<br><b>Audience: </b>' + Audience;
-         html += '<br><b>SelfStreamMute: </b>' + StreamMute;
-         html += '<br><b><span class="label label-primary">BeamBot FollowNotify:' + FollowNotify +'</b>';
+         html += '<br><b><span class="label label-info">---Preference---</b>'
+         html += '<br><b><span class="label label-info">interactive:' + Tetris +'</b>';
+         html += '<br><b><span class="label label-info">Audience:' + Audience +'</b>';
+         html += '<br><b><span class="label label-info">SelfStreamMute:' + StreamMute +'</b>';
+         html += '<br><b><span class="label label-info">BeamBot FollowNotify:' + FollowNotify +'</b>';
          html += '<br><b><span class="label label-info">TweetNotify:' + TweetNotify +'</b>';
-         html += '<br><b>transcoding: </b>' + te;
+         html += '<br><b><span class="label label-info">Transcoding:' + te +'</b>';
          html += '<br><b><span class="label label-primary">------------</b>'
          html += "<br>";
          if(Online){
