@@ -37,7 +37,7 @@ function getData(){
          var joined = data['createdAt'];
          var html = '<center><img src="' + Avatar + '"width="100px" height="100px" style="border:3px solid #fff">';
          html += '<h1><span class="label label-success">' + Username + '</h1>';
-         html += '<br><b><span class="label label-primary">---Info---</b>'
+         html += '<br><b><span class="label label-primary">----------</b>'
          html += '<br><b><span class="label label-primary">Followers: ' + Followers+ '</b>';
          html += '<br><b><span class="label label-primary">Partnered: ' + Partnered +'</b>';
          html += '<br><b><span class="label label-primary">Total Views: ' + TotalViews +'</b>';
@@ -50,7 +50,7 @@ function getData(){
          html += '<br><b>Channel ID: </b>' + ChannelID;
          html += '<br><b>Cover ID: </b>' + Coverid;
          html += '<br><b>Thumbnail ID: </b>' + Thumbnail;
-         html += '<br><b><span class="label label-info">---Preference---</b>'
+         html += '<br><b><span class="label label-primary">---Preference---</b>'
          html += '<br><b><span class="label label-info">interactive:' + Tetris +'</b>';
          html += '<br><b><span class="label label-info">Audience:' + Audience +'</b>';
          html += '<br><b><span class="label label-info">SelfStreamMute:' + StreamMute +'</b>';
