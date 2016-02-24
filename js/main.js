@@ -25,6 +25,7 @@ function getData(){
          var Thumbnail = data['thumbnailId'];
          var StreamMute = data['preferences']['channel:player:muteOwn'];
          var FollowNotify = data['preferences']['channel:notify:follow'];
+         var SubscribeNotify = data['preferences']['channel:notify:subscribe'];
          var TweetNotify = data['preferences']['channel:tweet:enabled'];
          var TotalViews = data['viewersTotal'];
          var te = data['transcodingEnabled'];
@@ -55,6 +56,7 @@ function getData(){
          html += '<br><b><span class="label label-info">Audience:' + Audience +'</b>';
          html += '<br><b><span class="label label-info">SelfStreamMute:' + StreamMute +'</b>';
          html += '<br><b><span class="label label-info">BeamBot FollowNotify:' + FollowNotify +'</b>';
+         html += '<br><b><span class="label label-info">BeamBot SubNotify:' + SubscribeNotify +'</b>';
          html += '<br><b><span class="label label-info">TweetNotify:' + TweetNotify +'</b>';
          html += '<br><b><span class="label label-info">Transcoding:' + te +'</b>';
          html += '<br><b><span class="label label-primary">------------</b>'
