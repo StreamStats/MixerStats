@@ -4664,7 +4664,7 @@ a {
   text-decoration: none; }
 
 body {
-  background: linear-gradient(120deg, #155799, #159957); }
+  background: gradient(120deg, #155799, #159957); }
 
 .display-5 {
   color: #fff; }
