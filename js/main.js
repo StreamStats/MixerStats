@@ -39,7 +39,7 @@ function getData(){
          var html = '<center><img src="' + Avatar + '"width="100px" height="100px" style="border:3px solid #fff">';
          html += '<h1><span class="label label-success">' + Username + '</h1>';
          html += '<br><b><span class="label label-primary">----------</b>'
-          html += '<br><b><span class="label label-primary"><a href="https://beam.pro/' + Username + '">Beam.pro/'+ Username +'</a></b>';
+          html += '<br><b><span class="label label-primary"><font size="3" color="white"><a href="https://beam.pro/' + Username + '">Beam.pro/'+ Username +'</a></b>';
          html += '<br><b><span class="label label-primary">Followers: ' + Followers+ '</b>';
          html += '<br><b><span class="label label-primary">Partnered: ' + Partnered +'</b>';
          html += '<br><b><span class="label label-primary">Total Views: ' + TotalViews +'</b>';
