@@ -53,13 +53,13 @@ function getData(){
          html += '<br><b><span class="label label-primary">Cover ID: ' + Coverid+ '</b>';
          html += '<br><b><span class="label label-primary">Thumbnail ID: ' + Thumbnail+ '</b>';
          html += '<br><b><span class="label label-primary">---Preference---</b>'
-         html += '<br><b><span class="label label-info">interactive:' + Tetris +'</b>';
-         html += '<br><b><span class="label label-info">Audience:' + Audience +'</b>';
-         html += '<br><b><span class="label label-info">SelfStreamMute:' + StreamMute +'</b>';
-         html += '<br><b><span class="label label-info">BeamBot FollowNotify:' + FollowNotify +'</b>';
-         html += '<br><b><span class="label label-info">BeamBot SubNotify:' + SubscribeNotify +'</b>';
-         html += '<br><b><span class="label label-info">TweetNotify:' + TweetNotify +'</b>';
-         html += '<br><b><span class="label label-info">Transcoding:' + te +'</b>';
+         html += '<br><b><span class="label label-info"style="color: black;">interactive:' + Tetris +'</b>';
+         html += '<br><b><span class="label label-info"style="color: black;">Audience:' + Audience +'</b>';
+         html += '<br><b><span class="label label-info"style="color: black;">SelfStreamMute:' + StreamMute +'</b>';
+         html += '<br><b><span class="label label-info"style="color: black;">BeamBot FollowNotify:' + FollowNotify +'</b>';
+         html += '<br><b><span class="label label-info"style="color: black;">BeamBot SubNotify:' + SubscribeNotify +'</b>';
+         html += '<br><b><span class="label label-info"style="color: black;">TweetNotify:' + TweetNotify +'</b>';
+         html += '<br><b><span class="label label-info"style="color: black;">Transcoding:' + te +'</b>';
          html += '<br><b><span class="label label-primary">------------</b>'
          html += "<br>";
          if(Online){
