@@ -19,3 +19,7 @@
 .label-info {
     font-family:oswald;
 }
+.form-control{
+    font-family:oswald;
+    background-color: green;
+}
