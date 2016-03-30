@@ -37,7 +37,7 @@ function getData(){
          }
          var joined = data['createdAt'];
          
-         var html = '<center><img src="' + Avatar + '"class="img-circle"width="200px" height="200px" style="border:4px solid #fff">';
+         var html = '<center><img src="' + Avatar + '"class="img-circle"width="200px" height="200px" style="border:4px solid black">';
          
          html += '<h1><span class="label label-success">' + Username + '</h1>';
          html += '<br><b><span class="label label-primary">----------</b>'
