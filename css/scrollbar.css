@@ -23,3 +23,17 @@
     font-family:oswald;
     background-color: green;
 }
+
+hr {
+    display: none;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+.page-header {
+    border-bottom-color: #4e5d6c;
+    display: none;
+}
