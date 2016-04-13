@@ -15,6 +15,10 @@
     font-family:oswald;
     background-color: darkblue;
 }
+.a:hover {
+    color:yellow;
+}
+
 
 .label-info {
     font-family:oswald;
