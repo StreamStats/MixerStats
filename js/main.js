@@ -64,7 +64,7 @@ function getData(){
          html += '<br><b><span class="label label-info"style="color: black;">Transcoding:' + SSte +'</b>';
          html += '<br><b><span class="label label-primary">------------</b>'
          html += "<br>";
-         if(SSOnline){
+         if(Online){
              html += '<br><b><font color="White"><a href="https://beam.pro/' + SSUsername + '">Online</a></font></b>';
          }else{
              html += '<br><b><font color="red">Offline</font></b>';
