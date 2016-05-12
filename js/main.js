@@ -41,7 +41,7 @@ function getData(){
          
          html += '<h1><center><span class="label label-success">' + SSUsername + '</h1>';
          html += '<br><b><span class="label label-primary">----------</b>'
-          html += '<br><b><span class="label label-primary"><font size="3" color="white">Url Link: <a href="https://beam.pro/' + Username + '">Beam.pro/'+ Username +'</a></b>';
+          html += '<br><b><span class="label label-primary"><font size="3" color="white">Url Link: <a href="https://beam.pro/' + SSUsername + '">Beam.pro/'+ Username +'</a></b>';
          html += '<br><b><span class="label label-primary">Followers: ' + SSFollowers+ '</b>';
          html += '<br><b><span class="label label-primary">Partnered: ' + SSPartnered +'</b>';
          html += '<br><b><span class="label label-primary">Total Views: ' + SSTotalViews +'</b>';
