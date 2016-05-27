@@ -20,6 +20,7 @@ function getData(){
          var lvls = data['user']['level'];
          var Sparks = data['user']['sparks'];
          var ChannelID = data['user']['id'];
+         var HostID = data['hosteeId'];
          var Tetrisid = data['tetrisGameId'];
          var Coverid = data['coverId'];
          var Thumbnail = data['thumbnailId'];
@@ -51,6 +52,7 @@ function getData(){
          html += '<br><b><span class="label label-warning"style="color: black;">Sparks: ' + Sparks +'</b></i>';
          html += '<br><b><span class="label label-primary">---ID---</b>'
          html += '<br><b><span class="label label-primary">Tetris Game ID: ' + Tetrisid+ '</b>';
+         html += '<br><b><span class="label label-primary">Host ID: ' + HostID+ '</b>';
          html += '<br><b><span class="label label-primary">Channel ID: ' + ChannelID+ '</b>';
          html += '<br><b><span class="label label-primary">Cover ID: ' + Coverid+ '</b>';
          html += '<br><b><span class="label label-primary">Thumbnail ID: ' + Thumbnail+ '</b>';
