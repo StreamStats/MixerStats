@@ -29,7 +29,6 @@ function getData(){
          var SubscribeNotify = data['preferences']['channel:notify:subscribe'];
          var TweetNotify = data['preferences']['channel:tweet:enabled'];
          var TotalViews = data['viewersTotal'];
-         var PTeam = data['primaryTeam'];
          var te = data['transcodingEnabled'];
          var Online = data['online'];
          if(data['type'] != null){
@@ -65,7 +64,6 @@ function getData(){
          html += '<br><b><span class="label label-info"style="color: black;">BeamBot SubNotify:' + SubscribeNotify +'</b>';
          html += '<br><b><span class="label label-info"style="color: black;">TweetNotify:' + TweetNotify +'</b>';
          html += '<br><b><span class="label label-info"style="color: black;">Transcoding:' + te +'</b>';
-         html += '<br><b><span class="label label-info"style="color: black;">Primary Team:' + PTeam +'</b>';
          html += '<br><b><span class="label label-primary">------------</b>'
          html += "<br>";
          if(Online){
