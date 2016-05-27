@@ -10,7 +10,7 @@ $(document).ready(function(event){
 });
 function getData(){
     $.get('https://beam.pro/api/v1/channels/' + $('#inputText').val(), "", function(data){
-         var SSAvatar = "https://beam.pro/api/v1/users/" + data['user']['id'] + "/avatar";
+         var Avatar = "https://beam.pro/api/v1/users/" + data['user']['id'] + "/avatar";
          var SSUsername = data['user']['username'];
          var SSFollowers = data['numFollowers'];
          var SSPartnered = data['partnered'];
@@ -37,7 +37,7 @@ function getData(){
          }
          var SSjoined = data['createdAt'];
          
-         var html = '<center><img src="' + SSAvatar + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
+         var html = '<center><img src="' + Avatar + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
          
          html += '<h1><center><span class="label label-success">' + SSUsername + '</h1>';
          html += '<br><b><span class="label label-primary">----------</b>'
