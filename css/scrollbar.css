@@ -19,6 +19,9 @@
     color:yellow;
 }
 
+.label-warning {
+    background-color: #fff;
+}
 
 .label-info {
     font-family:oswald;
