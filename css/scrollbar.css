@@ -19,11 +19,12 @@
     color:yellow;
 }
 
-.label-warning {
-    background-color: #fff;
-    color: #ffcc31;
-}
 
+
+table, th, td, label-warning {
+   border: 1px solid black;
+    background-color: #ffcc31;
+}
 
 
 .label-info {
