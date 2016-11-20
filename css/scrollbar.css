@@ -21,11 +21,10 @@
 
 .label-warning {
     background-color: #fff;
+    color: #ffcc31;
 }
 
-Sparks {
-    background-color: #ffcc31;
-}
+
 
 .label-info {
     font-family:oswald;
