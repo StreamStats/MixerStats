@@ -20,7 +20,7 @@ function getData(){
          var lvls = data['user']['level'];
          var Sparks = data['user']['sparks'];
          var ChannelID = data['user']['id'];
-         var BeamPro = data['user']['id'];
+         var BeamPro = data['user']['groups'][1]['name']
          var HostID = data['hosteeId'];
          var Tetrisid = data['tetrisGameId'];
          var Coverid = data['coverId'];
@@ -32,10 +32,6 @@ function getData(){
          var TotalViews = data['viewersTotal'];
          var te = data['transcodingEnabled'];
          var Online = data['online'];
-         if(data.groups.1.name !== 'True')
-                     }else{
-            var beampro = "False";
-         }
          if(data['type'] != null){
             var lastPlayed = data['type']['name'];
          }else{
