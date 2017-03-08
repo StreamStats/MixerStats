@@ -47,7 +47,7 @@ function getData(){
          html += '<br><b><span class="label label-primary">Followers: ' + Followers+ '</b>';
          html += '<br><b><span class="label label-primary">Partnered: ' + Partnered +'</b>';
          html += '<br><b><span class="label label-primary">Total Views: ' + TotalViews +'</b>';
-         html += '<br><b><span class="label label-primary">Has Beam Pro ' + beampro +'</b>';
+         html += '<br><b><span class="label label-primary">Has Beam Pro ' + BeamPro +'</b>';
          html += '<br><b><span class="label label-danger">---Points---</b>'
          html += '<br><b><span class="label label-warning"style="color: black;">Level: ' + lvls +'</b>';
          html += '<br><b><span class="label label-warning"style="color: black;">Experience: ' + Experience +'</b>';
