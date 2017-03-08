@@ -20,6 +20,7 @@ function getData(){
          var lvls = data['user']['level'];
          var Sparks = data['user']['sparks'];
          var ChannelID = data['user']['id'];
+         var BeamPro = data['user']['id'];
          var HostID = data['hosteeId'];
          var Tetrisid = data['tetrisGameId'];
          var Coverid = data['coverId'];
@@ -31,6 +32,10 @@ function getData(){
          var TotalViews = data['viewersTotal'];
          var te = data['transcodingEnabled'];
          var Online = data['online'];
+         if(data.groups.1.name !== 'True')
+                     }else{
+            var beampro = "False";
+         }
          if(data['type'] != null){
             var lastPlayed = data['type']['name'];
          }else{
@@ -46,6 +51,7 @@ function getData(){
          html += '<br><b><span class="label label-primary">Followers: ' + Followers+ '</b>';
          html += '<br><b><span class="label label-primary">Partnered: ' + Partnered +'</b>';
          html += '<br><b><span class="label label-primary">Total Views: ' + TotalViews +'</b>';
+         html += '<br><b><span class="label label-primary">Has Beam Pro ' + beampro +'</b>';
          html += '<br><b><span class="label label-danger">---Points---</b>'
          html += '<br><b><span class="label label-warning"style="color: black;">Level: ' + lvls +'</b>';
          html += '<br><b><span class="label label-warning"style="color: black;">Experience: ' + Experience +'</b>';
