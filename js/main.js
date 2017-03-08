@@ -20,7 +20,7 @@ function getData(){
          var lvls = data['user']['level'];
          var Sparks = data['user']['sparks'];
          var ChannelID = data['user']['id'];
-         var BeamRank = data['user']['groups'][0]['name'];
+         var BeamRank = data['user']['groups'][1]['name'];
          var HostID = data['hosteeId'];
          var Tetrisid = data['tetrisGameId'];
          var Coverid = data['coverId'];
