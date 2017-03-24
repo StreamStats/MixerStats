@@ -20,7 +20,6 @@ function getData(){
          var lvls = data['user']['level'];
          var Sparks = data['user']['sparks'];
          var ChannelID = data['user']['id'];
-         var BeamRank = data['user']['groups'][1]['name'];
          var HostID = data['hosteeId'];
          var Tetrisid = data['tetrisGameId'];
          var Coverid = data['coverId'];
@@ -47,7 +46,6 @@ function getData(){
          html += '<br><b><span class="label label-primary">Followers: ' + Followers+ '</b>';
          html += '<br><b><span class="label label-primary">Partnered: ' + Partnered +'</b>';
          html += '<br><b><span class="label label-primary">Total Views: ' + TotalViews +'</b>';
-         html += '<br><b><span class="label label-primary">BeamRank: ' + BeamRank +'</b>';
          html += '<br><b><span class="label label-danger">---Points---</b>'
          html += '<br><b><span class="label label-warning"style="color: black;">Level: ' + lvls +'</b>';
          html += '<br><b><span class="label label-warning"style="color: black;">Experience: ' + Experience +'</b>';
