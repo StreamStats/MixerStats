@@ -102,7 +102,7 @@ function getData(){
          html += '<br><b><span class="label label-info"style="color: black;">BeamBot FollowNotify:' + FollowNotify +'</b>';
          html += '<br><b><span class="label label-info"style="color: black;">BeamBot SubNotify:' + SubscribeNotify +'</b>';
          html += '<br><b><span class="label label-info"style="color: black;">TweetNotify:' + TweetNotify +'</b>';
-         html += '<br><b><span class="label label-info"style="color: black;">Transcoding:' + te +'</b>';
+         html += '<br><b><span class="label label-info"style="color: black;">Transcoding:' + transcoding +'</b>';
          html += '<br><b><span class="label label-primary">------------</b>'
          html += "<br>";
          if(Online){
