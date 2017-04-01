@@ -1,6 +1,7 @@
 $(document).ready(function(event){
    $('#submit').click(function(event){
       getData();
+       console.log(UserName+" Pressed The Button")
       
    });
    $('#formThing').submit(function(event){
