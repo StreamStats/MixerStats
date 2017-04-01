@@ -29,7 +29,6 @@ function getData(){
          var SubscribeNotify = data['preferences']['channel:notify:subscribe'];
          var TweetNotify = data['preferences']['channel:tweet:enabled'];
          var TotalViews = data['viewersTotal'];
-         var joined = data.createdAt;
          var transcoding = data['transcodingEnabled'];
          var Online = data['online'];
          if(data['type'] != null){
@@ -77,7 +76,7 @@ function getData(){
          }else{
             var TweetNotify = "On";
          }
-         
+         var joined = data['createdAt'];
          var html = '<center><img src="' + Avatar + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
          
          html += '<h1><center><span class="label label-success">' + Username + '</h1>';
