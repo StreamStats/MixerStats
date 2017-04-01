@@ -1,7 +1,6 @@
 $(document).ready(function(event){
    $('#submit').click(function(event){
       getData();
-       console.log(UserName+" Pressed The Button")
       
    });
    $('#formThing').submit(function(event){
@@ -13,6 +12,7 @@ function getData(){
     $.get('https://beam.pro/api/v1/channels/' + $('#inputText').val(), "", function(data){
          var Avatar = "https://beam.pro/api/v1/users/" + data['user']['id'] + "/avatar";
          var Username = data['user']['username'];
+         console.log(Username+" Pressed The Button")
          var Followers = data['numFollowers'];
          var Partnered = data['partnered'];
          var Tetris = data['interactive'];
