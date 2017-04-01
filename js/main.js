@@ -39,12 +39,37 @@ function getData(){
          if(HostID = null){
             var HostID = null;
          }else{
-            var HostID = "None";
+            var HostID = "No ID";
          }
          if(Tetrisid = undefined){
             var Tetrisid = undefined;
          }else{
-            var Tetrisid = "None";
+            var Tetrisid = "No ID";
+         }
+         if(Partnered = false){
+            var Partnered = "No";
+         }else{
+            var Partnered = "Yes";
+         }
+         if(Tetris = false){
+            var Tetris = "No";
+         }else{
+            var Tetris = "Yes";
+         }
+         if(StreamMute = false){
+            var StreamMute = "Off";
+         }else{
+            var StreamMute = "On";
+         }
+         if(SubscribeNotify = false){
+            var SubscribeNotify = "Off";
+         }else{
+            var SubscribeNotify = "On";
+         }
+         if(TweetNotify = false){
+            var TweetNotify = "Off";
+         }else{
+            var TweetNotify = "On";
          }
          var joined = data['createdAt'];
          
