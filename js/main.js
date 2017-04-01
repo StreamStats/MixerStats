@@ -29,7 +29,8 @@ function getData(){
          var SubscribeNotify = data['preferences']['channel:notify:subscribe'];
          var TweetNotify = data['preferences']['channel:tweet:enabled'];
          var TotalViews = data['viewersTotal'];
-         var te = data['transcodingEnabled'];
+         var createdAt = data.createdAt;
+         var transcoding = data['transcodingEnabled'];
          var Online = data['online'];
          if(data['type'] != null){
             var lastPlayed = data['type']['name'];
@@ -45,6 +46,11 @@ function getData(){
             var Tetrisid = undefined;
          }else{
             var Tetrisid = "No ID";
+         }
+         if(transcoding = undefined){
+            var transcoding = "Off";
+         }else{
+            var transcoding = "On";
          }
          if(Partnered = false){
             var Partnered = "No";
@@ -71,7 +77,7 @@ function getData(){
          }else{
             var TweetNotify = "On";
          }
-         var joined = data['createdAt'];
+         var joined = moment(createdAt).format("dddd, MMMM Do YYYY, h:mm:ss a");
          
          var html = '<center><img src="' + Avatar + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
          
