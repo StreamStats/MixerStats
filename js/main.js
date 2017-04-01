@@ -36,6 +36,11 @@ function getData(){
          }else{
             var lastPlayed = "None";
          }
+         if(HostID = null){
+            var HostID = null;
+         }else{
+            var HostID = "None";
+         }
          var joined = data['createdAt'];
          
          var html = '<center><img src="' + Avatar + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
