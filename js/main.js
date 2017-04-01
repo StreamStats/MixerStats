@@ -77,7 +77,6 @@ function getData(){
          }else{
             var TweetNotify = "On";
          }
-         var created = moment('joined').format('DD-MM-YYYY') 
          
          var html = '<center><img src="' + Avatar + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
          
