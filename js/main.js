@@ -12,7 +12,6 @@ function getData(){
     $.get('https://beam.pro/api/v1/channels/' + $('#inputText').val(), "", function(data){
          var Avatar = "https://beam.pro/api/v1/users/" + data['user']['id'] + "/avatar";
          var Username = data['user']['username'];
-         console.log(Username+" Pressed The Button")
          var Followers = data['numFollowers'];
          var Partnered = data['partnered'];
          var Tetris = data['interactive'];
@@ -77,6 +76,7 @@ function getData(){
          }else{
             var TweetNotify = "On";
          }
+console.log(Username+" Pressed The Button \nLive:"+Online)
          var joined = data['createdAt'];
          var html = '<center><img src="' + Avatar + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
          
