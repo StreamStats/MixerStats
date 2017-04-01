@@ -76,6 +76,11 @@ function getData(){
          }else{
             var TweetNotify = "On";
          }
+         if(FollowNotify = false){
+            var FollowNotify = "Off";
+         }else{
+            var FollowNotify = "On";
+         }
 console.log(Username+" Pressed The Button \nLive:"+Online)
          var joined = data['createdAt'];
          var html = '<center><img src="' + Avatar + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
