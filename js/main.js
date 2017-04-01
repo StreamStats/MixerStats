@@ -41,6 +41,11 @@ function getData(){
          }else{
             var HostID = "None";
          }
+         if(Tetrisid = undefined){
+            var Tetrisid = undefined;
+         }else{
+            var Tetrisid = "None";
+         }
          var joined = data['createdAt'];
          
          var html = '<center><img src="' + Avatar + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
