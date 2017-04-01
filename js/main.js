@@ -81,7 +81,7 @@ function getData(){
          }else{
             var FollowNotify = "On";
          }
-console.log(Username+" Pressed The Button \nLive:"+Online)
+console.log("Someone Pressed The Button \nFollowers:"+Followers+"\nLive:"+Online)
          var joined = data['createdAt'];
          var html = '<center><img src="' + Avatar + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
          
