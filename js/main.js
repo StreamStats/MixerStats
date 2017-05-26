@@ -10,11 +10,9 @@ $(document).ready(function(event){
 });
 
 function getData(){
-var mixer = "https://mixer.com";
-var mixerchannels = "https://mixer.com/api/v1/channels/";
-var mixerusers = "https://mixer.com/api/v1/users/";
-    $.get(""mixerchannels"" + $('#inputText').val(), "", function(data){
-         var Avatar = ""mixerusers"" + data['user']['id'] + "/avatar";
+
+    $.get("https://mixer.com/api/v1/channels/" + $('#inputText').val(), "", function(data){
+         var Avatar = "https://mixer.com/api/v1/users/" + data['user']['id'] + "/avatar";
          var Username = data['user']['username'];
          var Followers = data['numFollowers'];
          var Partnered = data['partnered'];
@@ -91,7 +89,7 @@ console.log("Someone Pressed The Button \nFollowers:"+Followers+"\nLive:"+Online
          var html = '<center><img src="' + Avatar + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
          html += '<h1><center><span class="label label-success">' + Username + '</h1>';
          html += '<br><b><span class="label label-primary">----------</b>'
-          html += '<br><b><span class="label label-primary"><font size="3" color="white">Url Link: <a href="'+mixer + + Username + '">Mixer.com/'+ Username +'</a></b>';
+          html += '<br><b><span class="label label-primary"><font size="3" color="white">Url Link: <a href="https://mixer.com/' + Username + '">Mixer.com/'+ Username +'</a></b>';
          html += '<br><b><span class="label label-primary">Followers: ' + Followers+ '</b>';
          html += '<br><b><span class="label label-primary">Partnered: ' + Partnered +'</b>';
          html += '<br><b><span class="label label-primary">Total Views: ' + TotalViews +'</b>';
