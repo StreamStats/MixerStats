@@ -17,6 +17,7 @@ function getData(){
          var Tetris = data['interactive'];
          var Audience = data['audience'];
          var Experience = data['user']['experience'];
+         var cover = data['cover']['url'];
          var lvls = data['user']['level'];
          var Sparks = data['user']['sparks'];
          var ChannelID = data['user']['id'];
@@ -84,7 +85,7 @@ function getData(){
 console.log("Someone Pressed The Button \nFollowers:"+Followers+"\nLive:"+Online)
          var joined = data['createdAt'];
          var html = '<center><img src="' + Avatar + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
-         
+         var html = '<center><img src="' + cover + '"class="background-url('cover')"width="100px" height="100px" style="border:4px solid black">';
          html += '<h1><center><span class="label label-success">' + Username + '</h1>';
          html += '<br><b><span class="label label-primary">----------</b>'
           html += '<br><b><span class="label label-primary"><font size="3" color="white">Url Link: <a href="https://beam.pro/' + Username + '">Beam.pro/'+ Username +'</a></b>';
@@ -105,14 +106,14 @@ console.log("Someone Pressed The Button \nFollowers:"+Followers+"\nLive:"+Online
          html += '<br><b><span class="label label-info"style="color: black;">interactive:' + Tetris +'</b>';
          html += '<br><b><span class="label label-info"style="color: black;">Audience:' + Audience +'</b>';
          html += '<br><b><span class="label label-info"style="color: black;">SelfStreamMute:' + StreamMute +'</b>';
-         html += '<br><b><span class="label label-info"style="color: black;">BeamBot FollowNotify:' + FollowNotify +'</b>';
-         html += '<br><b><span class="label label-info"style="color: black;">BeamBot SubNotify:' + SubscribeNotify +'</b>';
+         html += '<br><b><span class="label label-info"style="color: black;">HypeBot FollowNotify:' + FollowNotify +'</b>';
+         html += '<br><b><span class="label label-info"style="color: black;">HypeBot SubNotify:' + SubscribeNotify +'</b>';
          html += '<br><b><span class="label label-info"style="color: black;">TweetNotify:' + TweetNotify +'</b>';
          html += '<br><b><span class="label label-info"style="color: black;">Transcoding:' + transcoding +'</b>';
          html += '<br><b><span class="label label-primary">------------</b>'
          html += "<br>";
          if(Online){
-             html += '<br><b><font color="White"><a href="https://beam.pro/' + Username + '">Online</a></font></b>';
+             html += '<br><b><font color="White"><a href="https://mixer.com/' + Username + '">Online</a></font></b>';
          }else{
              html += '<br><b><font color="red">Offline</font></b>';
          }
@@ -120,7 +121,7 @@ console.log("Someone Pressed The Button \nFollowers:"+Followers+"\nLive:"+Online
          html += '<br><b><span class="label label-primary">Joined on: '+joined+' </b>'.replace('T', ' at ');
          $('.profile').html(html);
       }).fail(function(data){
-            html = '<p><span class="label label-warning"style="color: black;">A Beam user with that name does not exist.';
+            html = '<p><span class="label label-warning"style="color: black;">A Mixer user with that name does not exist.';
              $('.profile').html(html);
             return;
       });;
