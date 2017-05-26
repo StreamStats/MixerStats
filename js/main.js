@@ -89,7 +89,6 @@ var mixerusers = "https://mixer.com/api/v1/users/";
 console.log("Someone Pressed The Button \nFollowers:"+Followers+"\nLive:"+Online)
          var joined = data['createdAt'];
          var html = '<center><img src="' + Avatar + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
-         html += '<center><img src="' + cover + '"class="background-url('cover')"width="100px" height="100px" style="border:4px solid black">';
          html += '<h1><center><span class="label label-success">' + Username + '</h1>';
          html += '<br><b><span class="label label-primary">----------</b>'
           html += '<br><b><span class="label label-primary"><font size="3" color="white">Url Link: <a href="'+mixer + + Username + '">Mixer.com/'+ Username +'</a></b>';
