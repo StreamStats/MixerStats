@@ -12,7 +12,8 @@ $(document).ready(function(event){
 function getData(){
 
     $.get("https://mixer.com/api/v1/channels/" + $('#inputText').val(), "", function(data){
-         var Avatar = "https://mixer.com/api/v1/users/" + data['user']['id'] + "/avatar";
+         //var Avatar = "https://mixer.com/api/v1/users/" + data['user']['id'] + "/avatar";
+        var Avatar = data['user']['avatar'];
          var Username = data['user']['username'];
          var Followers = data['numFollowers'];
          var Partnered = data['partnered'];
@@ -118,6 +119,7 @@ console.log("Someone Pressed The Button \nFollowers:"+Followers+"\nLevels:"+lvls
          html += '<br><b><span class="label label-info"style="color: black;">HypeBot SubNotify:' + SubscribeNotify +'</b>';
          html += '<br><b><span class="label label-info"style="color: black;">TweetNotify:' + TweetNotify +'</b>';
          html += '<br><b><span class="label label-info"style="color: black;">Transcoding:' + transcoding +'</b>';
+         html+= '<br><b><span class="label label-info">Hypezone:'+Hypezone+'</b>';
          html += '<br><b><span class="label label-primary">------------</b>'
          html += "<br>";
          if(Online){
@@ -126,7 +128,6 @@ console.log("Someone Pressed The Button \nFollowers:"+Followers+"\nLevels:"+lvls
              html += '<br><b><font color="red">Offline</font></b>';
          }
          html+= '<br><b><span class="label label-primary">Last Played:'+lastPlayed+'</b>';
-        html+= '<br><b><span class="label label-success">Hypezone:'+Hypezone+'</b>';
          html += '<br><b><span class="label label-primary">Joined on: '+joined+' </b>'.replace('T', ' at ');
          $('.profile').html(html);
       }).fail(function(data){
