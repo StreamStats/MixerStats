@@ -31,6 +31,7 @@ function getData(){
          var FollowNotify = data['preferences']['channel:notify:follow'];
          var SubscribeNotify = data['preferences']['channel:notify:subscribe'];
          var TweetNotify = data['preferences']['channel:tweet:enabled'];
+        var Hypezone = data['preferences']['hypezone:allow'];
          var TotalViews = data['viewersTotal'];
          var transcoding = data['transcodingEnabled'];
          var Online = data['online'];
@@ -84,6 +85,11 @@ function getData(){
          }else{
             var FollowNotify = "On";
          }
+                if(Hypezone = false){
+            var Hypezone = "No";
+         }else{
+            var Hypezone = "Yes";
+         }
 console.log("Someone Pressed The Button \nFollowers:"+Followers+"\nLevels:"+lvls+"\Sparks:"+Sparks+"\nLive:"+Online)
          var joined = data['createdAt'];
          var html = '<center><img src="' + Avatar + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
@@ -120,6 +126,7 @@ console.log("Someone Pressed The Button \nFollowers:"+Followers+"\nLevels:"+lvls
              html += '<br><b><font color="red">Offline</font></b>';
          }
          html+= '<br><b><span class="label label-primary">Last Played:'+lastPlayed+'</b>';
+        html+= '<br><b><span class="label label-success">Hypezone:'+Hypezone+'</b>';
          html += '<br><b><span class="label label-primary">Joined on: '+joined+' </b>'.replace('T', ' at ');
          $('.profile').html(html);
       }).fail(function(data){
