@@ -92,7 +92,7 @@ function getData(){
          }else{
             var Hypezone = "Yes";
          }
-console.log("Someone Pressed The Button \nFollowers:"+Followers+"\nLevels:"+lvls+"\Sparks:"+Sparks+"\nLive:"+Online)
+console.log("Someone Pressed The Button \nFollowers:"+Followers+"\nLevels:"+lvls+"\Sparks:"+Sparks+"\nLive:"+Online+"\nAvatar:"+Avatar)
          var joined = data['createdAt'];
          var html = '<center><img src="' + Avatar + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
           html = '<center><img src="' + cover + '"class="img-circle"width="100px" height="100px" style="border:4px solid black">';
