@@ -121,7 +121,7 @@ console.log("Someone Pressed The Button \nFollowers:"+Followers+"\nLevels:"+lvls
          html += '<br><b><span class="label label-info"style="color: black;">TweetNotify:' + TweetNotify +'</b>';
          html += '<br><b><span class="label label-info"style="color: black;">Transcoding:' + transcoding +'</b>';
          html+= '<br><b><span class="label label-info">Hypezone:'+Hypezone+'</b>';
-        html+= '<br><b><span class="label label-info">Chat Level Restrict:'+levelRestrict+'</b>';
+        html+= '<br><b><span class="label label-info"style="color:green;">Chat Level Restrict:'+levelRestrict+'</b>';
          html += '<br><b><span class="label label-primary">------------</b>'
          html += "<br>";
          if(Online){
