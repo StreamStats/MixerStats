@@ -27,6 +27,7 @@ function getData(){
          var HostID = data['hosteeId'];
          var Tetrisid = data['tetrisGameId'];
          var Coverid = data['coverId'];
+         var levelRestrict = data['preferences']['channel:users:levelRestrict'];
          var Thumbnail = data['thumbnailId'];
          var StreamMute = data['preferences']['channel:player:muteOwn'];
          var FollowNotify = data['preferences']['channel:notify:follow'];
@@ -120,6 +121,7 @@ console.log("Someone Pressed The Button \nFollowers:"+Followers+"\nLevels:"+lvls
          html += '<br><b><span class="label label-info"style="color: black;">TweetNotify:' + TweetNotify +'</b>';
          html += '<br><b><span class="label label-info"style="color: black;">Transcoding:' + transcoding +'</b>';
          html+= '<br><b><span class="label label-info">Hypezone:'+Hypezone+'</b>';
+        html+= '<br><b><span class="label label-info">Chat Level Restrict:'+levelRestrict+'</b>';
          html += '<br><b><span class="label label-primary">------------</b>'
          html += "<br>";
          if(Online){
