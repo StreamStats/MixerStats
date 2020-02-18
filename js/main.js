@@ -13,7 +13,7 @@ function getData(){
 
     $.get("https://mixer.com/api/v1/channels/" + $('#inputText').val(), "", function(data){
          //var Avatar = "https://mixer.com/api/v1/users/" + data['avatarUrl'] + "/avatar";
-       var Avatar = "" + data['avatarUrl'] + "";
+       var Avatar = "https://mixer.com/api/v1/users/" + data['avatarUrl'] + "";
        // var Avatar = data['user']['avatar'];
          var Username = data['user']['username'];
          var Followers = data['numFollowers'];
